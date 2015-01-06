@@ -9,6 +9,10 @@ urlpatterns = patterns('',
 
     url('^$', views.list_songs),
     url(r'^play/(.*)', views.play),
+    url(r'^event/(.*)/(.*)/(.*)', views.event2),
+    url(r'^event/(.*)/(.*)', views.event1),
+    url(r'^event/(.*)', views.event0),
+    url(r'^tone/(.*)/(.*)', views.tone),
     url(r'^stop', views.stop),
     url(r'^admin/', include(admin.site.urls)),
 )
